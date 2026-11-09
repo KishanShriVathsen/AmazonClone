@@ -33,7 +33,7 @@ function ImageSliding(){
                 <img src={Kitchen} alt="Kitchen" className="h-150 w-full shrink-0 object-cover"/>
                 <img src={Lunar_new_year} alt="Lunar_new_year" className="h-150 w-full shrink-0 object-cover"/>
             </ul>
-            <div className='absolute bg-gradient-to-t from-black to-transparent top-0 left-0 right-0 h-full'></div>
+            <div className='absolute bg-gradient-to-t from-white to-transparent top-0 left-0 right-0 h-full'></div>
             <div className="flex justify-between absolute top-1/2 -translate-y-1/2 left-0 right-0 px-4">
                 <button onClick={slideLeft} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronLeft size={30} /></button>
                 <button onClick={slideRight} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronRight size={30} /></button>
