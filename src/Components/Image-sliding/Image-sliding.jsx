@@ -12,29 +12,29 @@ function ImageSliding(){
 
     function slideRight() {
         slider.current.scrollBy({
-            left: slider.current.clientWidth,
+            left: slider.current.clientWidth + 16,
             behavior: 'smooth'
         });
     }
 
     function slideLeft() {
         slider.current.scrollBy({
-            left: -slider.current.clientWidth,
+            left: -slider.current.clientWidth -16,
             behavior: 'smooth'
         });
     }
     return(
-        <div>
-            <ul className="flex overflow-x-hidden" ref={slider} >
-                <img src={Books} alt="Books" className="h-150 w-full  shrink-0 m-2" />
-                <img src={Electronics} alt="Electronics" className="h-150 w-full shrink-0"/>
-                <img src={Fashion} alt="Fashion" className="h-150 w-full shrink-0"/>
-                <img src={home_appliances} alt="home_appliances"className="h-150 w-full shrink-0" />
-                <img src={Kitchen} alt="Kitchen" className="h-150 w-full shrink-0"/>
-                <img src={Lunar_new_year} alt="Lunar_new_year" className="h-150 w-full shrink-0"/>
+        <div className="relative">
+            <ul className="flex overflow-x-hidden gap-4" ref={slider} >
+                <img src={Books} alt="Books" className="h-150 w-full  shrink-0 object-cover" />
+                <img src={Electronics} alt="Electronics" className="h-150 w-full shrink-0 object-cover"/>
+                <img src={Fashion} alt="Fashion" className="h-150 w-full shrink-0 object-cover"/>
+                <img src={home_appliances} alt="home_appliances"className="h-150 w-full shrink-0 object-cover" />
+                <img src={Kitchen} alt="Kitchen" className="h-150 w-full shrink-0 object-cover"/>
+                <img src={Lunar_new_year} alt="Lunar_new_year" className="h-150 w-full shrink-0 object-cover"/>
             </ul>
 
-            <div className="flex justify-between absolute top-[50%] left-0 right-0 px-4">
+            <div className="flex justify-between absolute top-1/2 -translate-y-1/2 left-0 right-0 px-4">
                 <button onClick={slideLeft} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronLeft size={30} /></button>
                 <button onClick={slideRight} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronRight size={30} /></button>
             </div>
