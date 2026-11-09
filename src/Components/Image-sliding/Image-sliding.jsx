@@ -4,17 +4,40 @@ import Fashion from '../../assets/Fashion.png';
 import home_appliances from '../../assets/home_appliances.png';
 import Kitchen from '../../assets/Kitchen.png';
 import Lunar_new_year from '../../assets/Lunar_new_year.png';
+import {ChevronRight,ChevronLeft} from 'lucide-react';
+import { useRef } from 'react';
 function ImageSliding(){
+
+    const slider = useRef(null);//useRef → When you need to remember a value or access a DOM element without triggering a re-render.
+
+    function slideRight() {
+        slider.current.scrollBy({
+            left: slider.current.clientWidth,
+            behavior: 'smooth'
+        });
+    }
+
+    function slideLeft() {
+        slider.current.scrollBy({
+            left: -slider.current.clientWidth,
+            behavior: 'smooth'
+        });
+    }
     return(
         <div>
-            <ul className="flex">
-                <img src={Books} alt="Books" className="h-150 w-full" />
-                <img src={Electronics} alt="Electronics" className="h-150 w-full"/>
-                <img src={Fashion} alt="Fashion" className="h-150 w-full"/>
-                <img src={home_appliances} alt="home_appliances"className="h-150 w-full" />
-                <img src={Kitchen} alt="Kitchen" className="h-150 w-full"/>
-                <img src={Lunar_new_year} alt="Lunar_new_year" className="h-150 w-full"/>
+            <ul className="flex overflow-x-hidden" ref={slider} >
+                <img src={Books} alt="Books" className="h-150 w-full  shrink-0 m-2" />
+                <img src={Electronics} alt="Electronics" className="h-150 w-full shrink-0"/>
+                <img src={Fashion} alt="Fashion" className="h-150 w-full shrink-0"/>
+                <img src={home_appliances} alt="home_appliances"className="h-150 w-full shrink-0" />
+                <img src={Kitchen} alt="Kitchen" className="h-150 w-full shrink-0"/>
+                <img src={Lunar_new_year} alt="Lunar_new_year" className="h-150 w-full shrink-0"/>
             </ul>
+
+            <div className="flex justify-between absolute top-[50%] left-0 right-0 px-4">
+                <button onClick={slideLeft} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronLeft size={30} /></button>
+                <button onClick={slideRight} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronRight size={30} /></button>
+            </div>
         </div>
     );
 }
