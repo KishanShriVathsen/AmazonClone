@@ -17,7 +17,7 @@ function Nav_bar(){
                                     <p>United</p>
                                     <p>Kingdom</p> 
                                 </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
     
