@@ -28,52 +28,68 @@ import Best_Sellers_in_Sports_Outdoors_10 from './assets/Best_Sellers_in_Sports_
 
 const cardsData = [
     {
-        title: "Gaming Accessories",
+        title:"Gaming Accessories",
         products: [
-            { image: gameingheadset, name: "Gaming Headset" },
-            { image: gameingkeyboard, name: "Gaming Keyboard" },
-            { image: gameingmouse, name: "Gaming Mouse" },
-            { image: gameingchair, name: "Gaming Chair" }
+            { image:gameingheadset, name:"Gaming Headset" },
+            { image:gameingkeyboard, name:"Gaming Keyboard" },
+            { image:gameingmouse, name:"Gaming Mouse" },
+            { image:gameingchair, name:"Gaming Chair" }
         ]
     },
     {
-        title: "Deals in PCs",
-        image: PC
+        title:"Deals in PCs",
+        image:PC
     },
     {
-        title: "Home Accessories",
+        title:"Home Accessories",
         products: [
-            { image: HT, name: "Towel" },
-            { image: dinning, name: "Dining Table" },
-            { image: Kitchen_2, name: "Kitchen Items" },
-            { image: TV, name: "Full Screen TV" }
+            { image:HT, name:"Towel" },
+            { image:dinning, name:"Dining Table" },
+            { image:Kitchen_2, name:"Kitchen Items" },
+            { image:TV, name:"Full Screen TV" }
         ]
     },
     {
-        title: "Study Things",
-        image: ST
+        title:"Study Things",
+        image:ST
     },
     {
-        title: "Grooming Products",
+        title:"Grooming Products",
         products: [
-            { image: Grooming_Products_1, name: "Richards Slazer" },
-            { image: Grooming_Products_2, name: "Hair Pomade 50g" },
-            { image: Grooming_Products_3, name: "Grooming Product 3" },
-            { image: Grooming_Products_4, name: "Grooming Product 4" }
+            { image:Grooming_Products_1, name:"Richards Slazer" },
+            { image:Grooming_Products_2, name:"Hair Pomade 50g" },
+            { image:Grooming_Products_3, name:"Grooming Product 3" },
+            { image:Grooming_Products_4, name:"Grooming Product 4" }
         ]
     },
     {
-        title: "Latest Devices",
-        image: Latest_Devicess
+        title:"Latest Devices",
+        image:Latest_Devicess
     },
     {
-        title: "Pets Food",
-        image: Pets_Food
+        title:"Pets Food",
+        image:Pets_Food
     },
     {
-        title: "Fashion Mart",
-        image: Fashion_Mart
+        title:"Fashion Mart",
+        image:Fashion_Mart
     }
 ];
+
+ export const Best_Sellers_in_Sports_Outdoors=[{
+    title:"Best Sellers in Sports & Outdoors",
+        products_sport:[
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_1,name:"sport-1"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_2,name:"sport-2"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_3,name:"sport-3"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_4,name:"sport-4"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_5,name:"sport-5"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_6,name:"sport-6"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_7,name:"sport-7"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_8,name:"sport-8"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_9,name:"sport-9"},
+            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_10,name:"sport-10"},
+        ]
+}]
 
 export default cardsData;
