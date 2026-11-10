@@ -15,6 +15,16 @@ import Grooming_Products_4 from './assets/Grooming_Products_4.png';
 import Latest_Devicess from './assets/Latest_Devicess.png';
 import Pets_Food from'./assets/Pets_Food.png';
 import Fashion_Mart from './assets/Fashion.png';
+import Best_Sellers_in_Sports_Outdoors_1 from './assets/Best_Sellers_in_Sports_Outdoors_1.png';
+import Best_Sellers_in_Sports_Outdoors_2 from './assets/Best_Sellers_in_Sports_Outdoors_2.png';
+import Best_Sellers_in_Sports_Outdoors_3 from './assets/Best_Sellers_in_Sports_Outdoors_3.png';
+import Best_Sellers_in_Sports_Outdoors_4 from './assets/Best_Sellers_in_Sports_Outdoors_4.png';
+import Best_Sellers_in_Sports_Outdoors_5 from './assets/Best_Sellers_in_Sports_Outdoors_5.png';
+import Best_Sellers_in_Sports_Outdoors_6 from './assets/Best_Sellers_in_Sports_Outdoors_6.png';
+import Best_Sellers_in_Sports_Outdoors_7 from './assets/Best_Sellers_in_Sports_Outdoors_7.png';
+import Best_Sellers_in_Sports_Outdoors_8 from './assets/Best_Sellers_in_Sports_Outdoors_8.png';
+import Best_Sellers_in_Sports_Outdoors_9 from './assets/Best_Sellers_in_Sports_Outdoors_9.png';
+import Best_Sellers_in_Sports_Outdoors_10 from './assets/Best_Sellers_in_Sports_Outdoors_10.png';
 
 const cardsData = [
     {
