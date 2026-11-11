@@ -1,9 +1,29 @@
 import cardsData from "../../collection";
 import {Best_Sellers_in_Sports_Outdoors} from '../../collection';
+import { useRef } from 'react';
+import {ChevronRight,ChevronLeft} from 'lucide-react';
 function Cards() {
+
+    const slider = useRef(null);//useRef → When you need to remember a value or access a DOM element without triggering a re-render.
+
+    function slideRight() {
+        if(!slider.current) return;
+        slider.current.scrollBy({
+            left: slider.current.clientWidth + 15,
+            behavior: 'smooth'
+        });
+    }
+
+    function slideLeft() {
+        if(!slider.current) return;
+        slider.current.scrollBy({
+            left: -slider.current.clientWidth -15,
+            behavior: 'smooth'
+        });
+    }
     return (
-        <>
-            <div className="relative bottom-60 z-10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-[95%]">
+        <div className="relative">
+            <div className="relative bottom-60 z-10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-[95%]" >
     
                 {cardsData.map((items, index) => (
                     <div key={index} className="bg-white p-4 rounded-lg opacity-90 text-center">
@@ -38,17 +58,17 @@ function Cards() {
                 
             </div>
     
-            <div className="relative bottom-60 mt-5 bg-white">
+            <div className="relative bottom-60 mt-5 bg-white" >
                     {
                         Best_Sellers_in_Sports_Outdoors.map((items,index)=>{
                             return(
                                 <div className="flex flex-col items-center gap-5 " key={index}>
                                    <h5 className="mt-5">{items.title}</h5>
-                                   <div className="flex gap-5 overflow-auto overflow-y-hidden">
+                                   <div className="flex gap-5 overflow-x-auto overflow-y-hidden " ref={slider}>
                                    {items.products_sport.map((product,index)=>{
                                     return(
-                                        <div className="shrink-0 m-5" key={index}>
-                                        <img src={product.Sports_Outdoors_image} className="h-50"></img>
+                                        <div className="shrink-0 m-7 cursor-pointer" key={index}>
+                                        <img src={product.Sports_Outdoors_image} alt={product.name} className="h-50"></img>
                                         </div>
                                     );
                                    })}
@@ -57,8 +77,12 @@ function Cards() {
                             );
                         })
                     }
+            </div> 
+            <div className="absolute top-200 flex justify-between w-full px-5 ">
+                <button  onClick={slideLeft} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronLeft  size={30}/></button>
+                <button  onClick={slideRight} className="bg-side-color opacity-70 rounded-full hover:opacity-100 hover:scale-105 hover:bg-white active:scale-95"><ChevronRight size={30}/> </button>
             </div>
-        </>
+        </div>
     );
 }
 
