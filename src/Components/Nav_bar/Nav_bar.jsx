@@ -8,7 +8,7 @@ function Nav_bar(){
                 <div className=" w-full  flex gap-5  max-sm:justify-between">
                     <div className='flex gap-[2%]'>
                         <Menu onClick={()=>SetToggle(!toggle)} className=' hidden max-sm:block cursor-pointer active:scale-95'/>
-                        <h1 className='max-sm:text-lg'>Amazon</h1>
+                        <img src="/logo.png" className='w-25 h-10'/>
                         <div className='max-sm:hidden'>
                             <p className='text-side-color max-sm:text-xs'>Deliver to</p>
                             <div className='flex'>
