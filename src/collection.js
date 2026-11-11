@@ -25,7 +25,11 @@ import Best_Sellers_in_Sports_Outdoors_7 from './assets/Best_Sellers_in_Sports_O
 import Best_Sellers_in_Sports_Outdoors_8 from './assets/Best_Sellers_in_Sports_Outdoors_8.png';
 import Best_Sellers_in_Sports_Outdoors_9 from './assets/Best_Sellers_in_Sports_Outdoors_9.png';
 import Best_Sellers_in_Sports_Outdoors_10 from './assets/Best_Sellers_in_Sports_Outdoors_10.png';
-
+import clothes_1 from './assets/clothes_1.png';
+import clothes_2 from './assets/clothes_2.png';
+import clothes_3 from './assets/clothes_3.png';
+import clothes_4 from './assets/clothes_4.png';
+import clothes_5 from './assets/clothes_5.png';
 const cardsData = [
     {
         title:"Gaming Accessories",
@@ -76,7 +80,7 @@ const cardsData = [
     }
 ];
 
- export const Best_Sellers_in_Sports_Outdoors=[{
+export const Best_Sellers_in_Sports_Outdoors=[{
     title:"Best Sellers in Sports & Outdoors",
         products_sport:[
             {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_1,name:"sport-1"},
@@ -90,6 +94,22 @@ const cardsData = [
             {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_9,name:"sport-9"},
             {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_10,name:"sport-10"},
         ]
+}]
+
+export const clothes=[{
+    title:"Deals Under $25",
+    products_clothes:[
+        {clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        {clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"}
+    ]
 }]
 
 export default cardsData;
