@@ -2,6 +2,7 @@ import cardsData from "../../collection";
 import {Best_Sellers_in_Sports_Outdoors,clothes} from '../../collection';
 import { useRef } from 'react';
 import {ChevronRight,ChevronLeft} from 'lucide-react';
+import { Link } from 'react-router-dom';
 function Cards() {
 
     const sportsSlider = useRef(null);
@@ -36,10 +37,10 @@ function Cards() {
                         {items.products && (
                             <div className="grid grid-cols-2 gap-3 h-[80%]">
                                 {items.products.map((product, i) => (
-                                    <div key={i}>
+                                    <Link to={`/Details/${product.id}`} key={i}>
                                         <img src={product.image} alt={product.name} className="w-35 mx-auto"/>
-                                        <a href="#" className="text-sm">{product.name}</a>
-                                    </div>
+                                        <span className="text-sm">{product.name}</span>
+                                    </Link>
                                 ))}
                             </div>
                         )}

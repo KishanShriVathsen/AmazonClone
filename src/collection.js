@@ -34,10 +34,10 @@ const cardsData = [
     {
         title:"Gaming Accessories",
         products: [
-            { image:gameingheadset, name:"Gaming Headset" },
-            { image:gameingkeyboard, name:"Gaming Keyboard" },
-            { image:gameingmouse, name:"Gaming Mouse" },
-            { image:gameingchair, name:"Gaming Chair" }
+            { id:101,image:gameingheadset, name:"Gaming Headset" },
+            { id:102,image:gameingkeyboard, name:"Gaming Keyboard" },
+            { id:103,image:gameingmouse, name:"Gaming Mouse" },
+            { id:104,image:gameingchair, name:"Gaming Chair" }
         ]
     },
     {
@@ -47,10 +47,10 @@ const cardsData = [
     {
         title:"Home Accessories",
         products: [
-            { image:HT, name:"Towel" },
-            { image:dinning, name:"Dining Table" },
-            { image:Kitchen_2, name:"Kitchen Items" },
-            { image:TV, name:"Full Screen TV" }
+            { id:105,image:HT, name:"Towel" },
+            { id:106,image:dinning, name:"Dining Table" },
+            { id:107,image:Kitchen_2, name:"Kitchen Items" },
+            { id:108,image:TV, name:"Full Screen TV" }
         ]
     },
     {
@@ -60,10 +60,10 @@ const cardsData = [
     {
         title:"Grooming Products",
         products: [
-            { image:Grooming_Products_1, name:"Richards Slazer" },
-            { image:Grooming_Products_2, name:"Hair Pomade 50g" },
-            { image:Grooming_Products_3, name:"Grooming Product 3" },
-            { image:Grooming_Products_4, name:"Grooming Product 4" }
+            { id:109,image:Grooming_Products_1, name:"Richards Slazer" },
+            { id:110,image:Grooming_Products_2, name:"Hair Pomade 50g" },
+            { id:111,image:Grooming_Products_3, name:"Grooming Product 3" },
+            { id:112,image:Grooming_Products_4, name:"Grooming Product 4" }
         ]
     },
     {
@@ -83,32 +83,32 @@ const cardsData = [
 export const Best_Sellers_in_Sports_Outdoors=[{
     title:"Best Sellers in Sports & Outdoors",
         products_sport:[
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_1,name:"sport-1"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_2,name:"sport-2"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_3,name:"sport-3"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_4,name:"sport-4"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_5,name:"sport-5"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_6,name:"sport-6"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_7,name:"sport-7"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_8,name:"sport-8"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_9,name:"sport-9"},
-            {Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_10,name:"sport-10"},
+            { id:201,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_1,name:"sport-1"},
+            { id:202,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_2,name:"sport-2"},
+            { id:203,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_3,name:"sport-3"},
+            { id:204,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_4,name:"sport-4"},
+            { id:205,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_5,name:"sport-5"},
+            { id:206,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_6,name:"sport-6"},
+            { id:207,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_7,name:"sport-7"},
+            { id:208,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_8,name:"sport-8"},
+            { id:209,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_9,name:"sport-9"},
+            { id:210,Sports_Outdoors_image:Best_Sellers_in_Sports_Outdoors_10,name:"sport-10"},
         ]
 }]
 
 export const clothes=[{
     title:"Deals Under $25",
     products_clothes:[
-        {clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
-        {clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"}
+        { id:301,clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:302,clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:303,clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:304,clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:305,clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:306,clothes_image:clothes_1,name:"clothes-1",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:307,clothes_image:clothes_2,name:"clothes-2",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:308,clothes_image:clothes_3,name:"clothes-3",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:309,clothes_image:clothes_4,name:"clothes-4",pre:"27%",price:"$14.49",List_Price:"$19.95"},
+        { id:310,clothes_image:clothes_5,name:"clothes-5",pre:"27%",price:"$14.49",List_Price:"$19.95"}
     ]
 }]
 

@@ -4,7 +4,7 @@ function Nav_bar(){
     const[toggle,SetToggle]=useState(false);
     return(
         <>
-            <div className='text-default-color bg-gray-900  p-3 fixed top-0 left-0 w-full z-50'>
+            <div className='text-default-color bg-gray-900  p-3 sticky top-0 z-50'>
                 <div className=" w-full  flex gap-5  max-sm:justify-between">
                     <div className='flex gap-[2%]'>
                         <Menu onClick={()=>SetToggle(!toggle)} className=' hidden max-sm:block cursor-pointer active:scale-95'/>
