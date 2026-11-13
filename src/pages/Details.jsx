@@ -1,15 +1,33 @@
 import { useParams } from "react-router-dom";
-import cardsData from "../collection";
+import cardsData, { Best_Sellers_in_Sports_Outdoors, clothes} from "../collection";
 import Rating from '../assets/Rating.png';
 import { MapPin } from "lucide-react";
 
 function Details() {
     const { id } = useParams();
 
-    const product = cardsData
-        .flatMap((items) => items.products || [])
-        .find((item) => item.id === Number(id));
+    const allProducts = [
+    ...cardsData.flatMap((items) => [
+        ...(items.products || []),
+        ...(items.image && items.id != null ? [items] : [])
+    ]),
 
+    ...Best_Sellers_in_Sports_Outdoors.flatMap(
+        (items) => items.products_sport || []
+    ),
+
+    ...clothes.flatMap(
+        (items) => items.products_clothes || []
+    )
+];
+console.log("URL ID:", id);
+console.log("Total products:", allProducts.length);
+console.log("All product IDs:", allProducts.map(items => items.id));
+
+const product = allProducts.find(
+    (items) => String(items.id) === String(id)
+);
+console.log("Found product:", product);
     if (!product) {
         return <h1>Product not found!</h1>;
     }
@@ -97,7 +115,7 @@ function Details() {
                             </div>
                         </div>
                     </div>
-                    <d>
+                    <div>
                         <h5>About This Item</h5>
                         <ul className="flex flex-col gap-5 list-disc p-5">
                             <li>Immersive Audio Experience:Enjoy clear and detailed audio with powerful bass that brings your games to life. Hear important in-game sounds and enjoy a more engaging gaming experience.</li>
@@ -108,7 +126,7 @@ function Details() {
                             
                             <li>Multi-Purpose Usage:Perfect for PC gaming, online classes, music, movies, and everyday entertainment. Its versatile design makes it suitable for both gaming and regular use.</li>
                         </ul>
-                    </d>
+                    </div>
                 </div>
             </div>
             <div className="p-3">

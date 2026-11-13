@@ -47,9 +47,9 @@ function Cards() {
     
                         {/* Single Large Image */}
                         {items.image && (
-                            <div className="w-full h-[80%] flex  justify-center items-center">
+                            <Link to={`/Details/${items.id}`} className="w-full h-[80%] flex  justify-center items-center">
                                 <img src={items.image} alt={items.title} className="w-full"/>
-                            </div>
+                            </Link>
                         )}
     
                         <a href="/" className="text-blue-400 block mt-3">
@@ -69,9 +69,9 @@ function Cards() {
                                    <div className="flex gap-5 overflow-x-auto overflow-y-hidden " ref={sportsSlider}>
                                    {items.products_sport.map((product,index)=>{
                                     return(
-                                        <div className="shrink-0 m-7 cursor-pointer" key={index}>
-                                        <img src={product.Sports_Outdoors_image} alt={product.name} className="h-50"></img>
-                                        </div>
+                                        <Link to={`/Details/${product.id}`} className="shrink-0 m-7 cursor-pointer" key={index}>
+                                        <img src={product.image} alt={product.name} className="h-50"></img>
+                                        </Link>
                                     );
                                    })}
                                    </div>
@@ -97,19 +97,20 @@ function Cards() {
                         {items.products && (
                             <div className="grid grid-cols-2 gap-3 h-[80%]">
                                 {items.products.map((product, i) => (
-                                    <div key={i}>
+                                    console.log("Clicked product ID:", product.id),
+                                    <Link to={`/Details/${product.id}`} key={i}>
                                         <img src={product.image} alt={product.name} className="w-35 mx-auto"/>
-                                        <a href="#" className="text-sm">{product.name}</a>
-                                    </div>
+                                        {product.name}
+                                    </Link>
                                 ))}
                             </div>
                         )}
     
                         {/* Single Large Image */}
                         {items.image && (
-                            <div className="w-full h-[80%] flex  justify-center items-center">
+                            <Link to={`/Details/${items.id}`} className="w-full h-[80%] flex  justify-center items-center">
                                 <img src={items.image} alt={items.title} className="w-full"/>
-                            </div>
+                            </Link>
                         )}
     
                         <a href="/" className="text-blue-400 block mt-3">
@@ -129,14 +130,14 @@ function Cards() {
                                    <div className="flex gap-5 overflow-x-auto overflow-y-hidden " ref={clothesSlider}>
                                    {items.products_clothes.map((product,index)=>{
                                     return(
-                                        <div className="shrink-0 cursor-pointer" key={index}>
-                                        <img src={product.clothes_image} alt={product.name} className="h-50"></img>
+                                        <Link to={`/Details/${product.id}`} className="shrink-0 cursor-pointer" key={index}>
+                                        <img src={product.image} alt={product.name} className="h-50"></img>
                                         <div className="w-full py-2 ml-2">
                                             <p className="text-sm text-red-500"><span className="bg-red-500 px-1 text-white">{product.pre}off</span> Deal</p>
                                             <p className="text-sm text-side-color">{product.price} List Price:{product.List_Price}</p>
                                             <p className="text-xs">This Product Is Best For You</p>
                                         </div>
-                                        </div>
+                                        </Link>
                                     );
                                    })}
                                    </div>
